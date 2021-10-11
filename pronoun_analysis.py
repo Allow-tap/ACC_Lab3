@@ -5,11 +5,8 @@ import os
 import glob
 from celery import Celery
 
-<<<<<<< HEAD
+
 app = Celery('tasks', backend='rpc://', broker='pyamqp://ubuntu@192.168.2.81//')
-=======
-app = Celery('tasks', backend='rpc://', broker='pyamqp://guest@localhost//')
->>>>>>> 0703d70d6c8c168c29a9f379386b4ffbcc75926c
 
 @app.task
 def tweet_analysis():
