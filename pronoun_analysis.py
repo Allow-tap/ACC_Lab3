@@ -6,12 +6,12 @@ import glob
 from celery import Celery
 
 
-app = Celery('tasks', backend='rpc://', broker='pyamqp://ubuntu@192.168.2.81//')
+app = Celery('tasks', backend='rpc://', broker='pyamqp://guest@localhost//')
 
 @app.task
 def tweet_analysis():
     data = []
-    path = '/home/ubuntu/lab_3/data'
+    path = '/home/ubuntu/ACC_Lab_3/data'
     for filename in glob.glob(os.path.join(path, '*')):
         with open(os.path.join(os.getcwd(), filename), 'r') as f: # open in readonly mode
             for line in f: #for each line in our file
