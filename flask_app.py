@@ -13,8 +13,11 @@ def result_flask_app():
         print("Executing..")
         time.sleep(8)
     data = result.get(timeout=1)
-    return jsonify(data)
-
+    pronouns , counts = zip(*data)
+    dic = dict(zip(pronouns, counts))
+    json_out = json.dumps(dic)
+    return json_out
+    #return json.dumps(data, sort_keys=True)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',port=5000, debug=False)
