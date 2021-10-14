@@ -59,3 +59,12 @@ $tar -xzvf data.tar.gz -C /home/ubuntu/lab_3
  export FLASK_APP=flask_app.py
  flask run --host=0.0.0.0
 ```
+### Results
+```
+curl -i http://<floating-ip>:<flask-port>/result_flask_app
+```
+make the curl request from any machine to get the results
+
+```
+"{\"den\": 173681, \"han\": 100508, \"det\": 75019, \"hon\": 33334, \"hen\": 3115, \"denna\": 2887, \"denne\": 723}"
+```
