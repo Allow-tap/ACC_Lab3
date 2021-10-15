@@ -15,8 +15,9 @@ def result_flask_app():
     data = result.get(timeout=1)
     pronouns , counts = zip(*data)
     dic = dict(zip(pronouns, counts))
+    dic['Total'] = sum(counts)
     json_out = json.dumps(dic)
-    return json_out
+    return jsonify(json_out)
     #return json.dumps(data, sort_keys=True)
 
 if __name__ == '__main__':
