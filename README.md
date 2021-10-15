@@ -75,3 +75,8 @@ make the curl request from any machine to get the results
 ### Normalized bar plot
 
 ![Pronoun Analysis Bar Chart ](Bar_chart.jpg)
+
+
+### Contextualization 
+* It is possible to contextualize this app by running `ssc_create_instance.py` this will provision a VM dedicated to the flask_app which we can curl from any machine.
+** The current caveat with this is that the data are not straight avaialble with --wget so you will have to work around that(e.g. scp)
