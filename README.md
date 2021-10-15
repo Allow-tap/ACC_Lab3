@@ -70,7 +70,7 @@ $ curl -i http://<floating-ip>:<flask-port>/result_flask_app
 make the curl request from any machine to get the results
 
 ```
-"{\"den\": 173681, \"han\": 100508, \"det\": 75019, \"hon\": 33334, \"hen\": 3115, \"denna\": 2887, \"denne\": 723}"
+"{\"den\": 173681, \"han\": 100508, \"det\": 75019, \"hon\": 33334, \"hen\": 3115, \"denna\": 2887, \"denne\": 723, \"Total\": 389267}"
 ```
 ### Normalized bar plot
 
