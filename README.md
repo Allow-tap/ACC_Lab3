@@ -74,4 +74,4 @@ make the curl request from any machine to get the results
 ```
 ### Normalized bar plot
 
-![Pronoun Analysis Bar Chart ](/ACC_Lab3/Bar_chart.jpg)
+![Pronoun Analysis Bar Chart ](Bar_chart.jpg)
