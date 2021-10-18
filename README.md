@@ -1,6 +1,9 @@
 # ACC_Celery_RabbitMQ
 ## Compute-Service based on the distributed task queue Celery and RabbitMQ broker
 
+## Contextualization 
+* It is possible to contextualize this app using 'cloug-cfg.txt' by running `ssc_create_instance.py` this will provision a VM dedicated to the flask_app which we can curl from any machine.
+
 ### Install Rabbit MQ
 ```
 $ sudo apt-get install rabbitmq-server 
@@ -77,5 +80,3 @@ make the curl request from any machine to get the results
 ![Pronoun Analysis Bar Chart ](bar_plot.jpg)
 
 
-### Contextualization 
-* It is possible to contextualize this app using 'cloug-cfg.txt' by running `ssc_create_instance.py` this will provision a VM dedicated to the flask_app which we can curl from any machine.
