@@ -1,3 +1,4 @@
+data/
 flask_app.pyc
 pronoun_analysis.pyc
 __pycache__
