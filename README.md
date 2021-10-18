@@ -2,7 +2,7 @@
 ## Compute-Service based on the distributed task queue Celery and RabbitMQ broker
 
 ## Contextualization 
-* It is possible to contextualize this app using 'cloug-cfg.txt' by running `ssc_create_instance.py` this will provision a VM dedicated to the flask_app which we can curl from any machine.
+* It is possible to contextualize the app using 'cloug-cfg.txt' by running `ssc_create_instance.py` this will provision a VM dedicated to the flask_app which we can curl from any machine.
 
 ### Install Rabbit MQ
 ```

@@ -9,6 +9,8 @@ packages:
 runcmd:
  - cd /home/ubuntu
  - git clone https://github.com/Allow-tap/ACC_Lab3.git
+ - cd /home/ubuntu/ACC_Lab3/data
+ - gzip -d *
  - pip3 install --upgrade pip 
  - apt-get install -y rabbitmq-server
  - pip3 install celery
